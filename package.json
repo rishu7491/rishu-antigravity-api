@@ -1,0 +1,16 @@
+{
+  "name": "rishu-antigravity-api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Local OpenAI-compatible API bridge for the installed AGY CLI",
+  "author": "Rishabh Raj <rishabhraj74918@gmail.com>",
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "memory:mcp": "node memory-mcp.mjs",
+    "check": "node --check load-env.mjs && node --check server.mjs && node --check memory-store.mjs && node --check memory-mcp.mjs"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  }
+}
